@@ -1,0 +1,49 @@
+{% extends 'parent.html' %}
+
+
+{% block title %}
+<title>Contact</title>
+{% endblock title %}
+
+
+
+{% block main %}
+<main>
+    <div class="container mt-5">
+        <h1 class="text-center my-4">CONTACT</h1>
+        <!-- Contact us form -->
+        <form class="contact-form border p-4 thick border">
+            <div class="mb-3 row">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="E-mail">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Message"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-outline-info" >SEND MESSAGE</button>
+
+            </div>
+        </form>
+    </div>
+</main>
+
+{% endblock main %}
+
+
+<footer></footer>
+
+</body>
+
+</html>
