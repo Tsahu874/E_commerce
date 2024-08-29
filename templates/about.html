@@ -1,12 +1,60 @@
+<!-- index page from the parent.html -->
 {% extends 'parent.html' %}
 
+<!-- code for title block -->
 {% block title %}
 <title>About</title>
+<style>
+    main {
+        background-image: url('/static/images/aboutBG.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+
+    .content {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 50px;
+        max-width: 800px;
+        margin: auto;
+
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    
+
+    nav {
+        background: transparent !important;
+    }
+</style>
 {% endblock title %}
 
 {% block main %}
 <main>
-    <h1>If you love flowers just remember this website </h1>
-</main>
+    <div class="content">
+        <h1>Welcome to Floral Wreath</h1>
+        <p>we celebrate the timeless beauty of nature. Our passion for flowers inspired
+            us to create unique, eco-friendly dried flower bouquets and individual sticks,
+            preserving their natural elegance for lasting enjoyment. Each piece in our collection
+            is carefully selected and crafted, perfect for adorning your home or personalizing your
+            own arrangements. By choosing dried flowers, you’re not only enhancing your space
+            but also supporting sustainable practices. We take pride in offering high-quality
+            products and exceptional customer service, bringing a touch of nature's beauty into your
+            life. Thank you for choosing Floral Wreath.
 
+        </p>
+
+    </div>
+</main>
 {% endblock main %}
