@@ -18,6 +18,64 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+    <style>
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        .product-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img{
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            transform: scale(1.1);
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            background-color: #28a790;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .buy-button:hover {
+            background-color: #ae5285;
+        }
+
+       
+    </style>
+
 </head>
 
 <body>
@@ -59,7 +117,7 @@
                         </div>
                         <div>
                             <li class="nav-item me-3">
-                                <a class="nav-link" href="/about" style="font-size: larger;">About</a>
+                                <a class="nav-link active" href="/about" style="font-size: larger;">About</a>
                             </li>
                         </div>
                         <div class="navbar-center">
@@ -71,7 +129,8 @@
 
 
                         <!-- Login Button -->
-                        <a href="/login" style="display: flex; align-items: center; padding: 0 15px; margin-left:680px ;">
+                        <a href="/login"
+                            style="display: flex; align-items: center; padding: 0 15px; margin-left:680px ;">
                             <i class="bi bi-person-fill" style="font-size: 2rem; color: #a94064;"></i>
                         </a>
 
@@ -108,7 +167,3 @@
             </div>
         </footer>
     </div> -->
-
-</body>
-
-</html>
